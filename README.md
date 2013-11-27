@@ -18,17 +18,29 @@ Or install it yourself as:
 
 ## Usage
 
-```require 'tiny_profiler'
+```ruby
+require 'tiny_profiler'
+
 TinyProfiler.instance.start
+
 (do something)
+
 TinyProfiler.instance.interval("heavy operation")
+
 => "heavy operation: 14.786334"
+
 (do something)
+
 TinyProfiler.instance.interval("second operation")
+
 => "second operation: 3.453059"
+
 (do something)
+
 TinyProfile.instance.finished
-=> {"heavy operation"=>14.786334, "second operation"=>3.453059, "total"=>22.390635}```
+
+=> {"heavy operation"=>14.786334, "second operation"=>3.453059, "total"=>22.390635}
+```
 
 You can reset all timers using
 
