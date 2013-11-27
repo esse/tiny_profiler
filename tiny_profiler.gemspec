@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["p.szmielew@ava.waw.pl"]
   spec.description   = %q{Tiny profiler for ruby}
   spec.summary       = %q{Tiny profiler for ruby}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/esse/tiny_profiler"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
