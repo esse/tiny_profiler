@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-require 'tiny_profiler'
+```require 'tiny_profiler'
 TinyProfiler.instance.start
 (do something)
 TinyProfiler.instance.interval("heavy operation")
@@ -28,9 +28,15 @@ TinyProfiler.instance.interval("second operation")
 => "second operation: 3.453059"
 (do something)
 TinyProfile.instance.finished
-=> {"heavy operation"=>14.786334, "second operation"=>3.453059, "total"=>22.390635}
+=> {"heavy operation"=>14.786334, "second operation"=>3.453059, "total"=>22.390635}```
 
-You can reset all timers using TinyProfiler.instance.reset or Tinyprofiler.instance.start
+You can reset all timers using
+
+    TinyProfiler.instance.reset
+    
+or
+
+    Tinyprofiler.instance.start
 
 It's singleton, so you can basically use it through your application when tracing some complicated operation.
 
